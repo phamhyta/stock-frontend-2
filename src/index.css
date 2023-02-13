@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+
+}
 .menu-item {
     font-weight: 700;
     font-size: 19px;
@@ -35,6 +39,8 @@
 .font-lato {
     font-family: 'Lato', sans-serif;
 }
+
+
 
 .bg-color {
    /* background-color: rgb(246,254,249); */
@@ -136,4 +142,34 @@
 
 .bg-footer-color {
     background-color: #2BCA89;
+}t-lato
+
+.bg-main-picture {
+    background-color: rgb(230,249,241);
 }
+
+.bg-main-button-picture {
+    background-color: #2BCA89;
+}
+
+.bg-side-color {
+    color: #BFC3C8;
+}
+
+.font-side-color {
+    color:#1D2939;
+}
+
+.font-side-color {
+    color:#00BF71;
+}
+
+.font-side-color2 {
+    color:#0047B3;
+}
+
+.text-ssm {
+    font-size: 8px;
+    line-height: 20px;
+}
+
