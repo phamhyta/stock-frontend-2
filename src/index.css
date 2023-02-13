@@ -5,8 +5,28 @@
 
 .font-roboto {
     font-family: 'Roboto', sans-serif;
-
 }
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+.text-color {
+  color: #1D2939;
+}
+
+.bg-cl-green {
+  background-color: #2BCA89;
+}
+
+.menu-hover:hover {
+  color: #2BCA89;
+  border-bottom: #2BCA89 solid 2px;
+}
+#root {
+  height: 100%;
+}
+
 .menu-item {
     font-weight: 700;
     font-size: 19px;
