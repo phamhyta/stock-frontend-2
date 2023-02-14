@@ -35,6 +35,7 @@ import {ReactComponent as  RoundCircle} from "../assets/svg/WelcomeGoStock/Round
 //first left side
 import {ReactComponent as  LeftGraph} from "../assets/svg/LeftSide/LeftGraph.svg";
 import {ReactComponent as  MonthlyView} from "../assets/svg/LeftSide/MonthlyView.svg";
+import {ReactComponent as  Logo1} from "../assets/svg/LeftSide/logo1.svg";
 
 function LandingPage() {
   const items = [
@@ -386,7 +387,7 @@ function LandingPage() {
             <div className="col-span-6 w-full  border h-[600px] overflow-hidden  flex relative ">
              
               <div className="shadow-left w-[48%] ml-0 mr-[4%] h-[500px] border  relative rounded-3xl flex flex-col pl-6 font-lato bg-white">
-                <p className="main-second-color text-3xl mb-9 ">{tag}</p>
+                <p className="main-second-color text-3xl mb-9 mt-2">{tag}</p>
                 <h2 className="text-color text-xl">LienViet <br></br> PostBank</h2>
                 <h2 className="text-2xl font-bold">SGD 788.42</h2>
                 <p className="bg-font-color text-sm mb-2">+6.2%</p>
@@ -396,10 +397,18 @@ function LandingPage() {
                 <p className="text-color text-sm font-bold">343,323</p>
               </div>
 
-              <div className="w-[48%] shadow-left shadow-middle   h-[500px] mt-10 border bg-yellow-400 relative rounded-3xl">
+              <div className="w-[48%] shadow-left shadow-middle   h-[500px] mt-10 border  relative rounded-3xl flex justify-center">
+                <div className="w-[95%] h-[60px] border  mt-10 rounded-lg flex justify-evenly p-2">
+                  <div className="w-[18%] h-[80%] border"><Logo1 className="w-full"></Logo1></div>
+                  <h1 className="w-[20%] text-xs font-bold">LienViet PostBank</h1>
+                  <div className="w-[25%] h-[88%] border"></div>
+               
+                  <h1 className="text-xs font-bold">VND 24,321 <h1 className="text-right bg-font-color">+3.14%</h1></h1>
+                   
+                </div>
               </div>
 
-              <div className="w-[25%] absolute h-[200px] left-[39%]  top-[32%] p-0 m-0">
+              <div className="w-[35%] absolute h-[200px] left-[32%]  rounded-lg  top-[32%] p-0 m-0">
                 <MonthlyView className="w-full m-0"></MonthlyView>
 
               </div>
