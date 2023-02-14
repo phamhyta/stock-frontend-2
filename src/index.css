@@ -142,7 +142,11 @@
 
 .bg-footer-color {
     background-color: #2BCA89;
-}t-lato
+}
+
+.footer-color {
+    color: #2BCA89;
+}
 
 .bg-main-picture {
     background-color: rgb(230,249,241);
@@ -156,7 +160,7 @@
     color: #BFC3C8;
 }
 
-.font-side-color {
+.font-side-color-2 {
     color:#1D2939;
 }
 
@@ -168,8 +172,26 @@
     color:#0047B3;
 }
 
+.font-side-color-w {
+    color: #9fa5b3;
+}
+
+.font-side-color-wt {
+    color: #D0D5DD;
+}
+
+.font-side-color-wt2 {
+    color: #344054;
+}
 .text-ssm {
     font-size: 8px;
     line-height: 20px;
 }
 
+.shadow-left {
+    box-shadow: -1.50848px 6.03392px 12.0678px rgba(0, 191, 113, 0.28);
+}
+
+.shadow-middle {
+    box-shadow: 0px 6.03392px 19.6102px rgba(10, 16, 72, 0.23);
+}
