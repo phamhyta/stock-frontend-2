@@ -36,6 +36,7 @@ import {ReactComponent as  RoundCircle} from "../assets/svg/WelcomeGoStock/Round
 import {ReactComponent as  LeftGraph} from "../assets/svg/LeftSide/LeftGraph.svg";
 import {ReactComponent as  MonthlyView} from "../assets/svg/LeftSide/MonthlyView.svg";
 import {ReactComponent as  Logo1} from "../assets/svg/LeftSide/logo1.svg";
+import {ReactComponent as  Graph1} from "../assets/svg/LeftSide/graph1.svg";
 
 function LandingPage() {
   const items = [
@@ -106,6 +107,8 @@ function LandingPage() {
       price: " -6.99%",
     },
   ];
+
+  
   const tag = "<";
 
   const widthpage = "88%";
@@ -263,15 +266,15 @@ function LandingPage() {
                     <Graph className="w-full"></Graph>
                   </div>
 
-                  <div className="w-[95%] h-[70px] mt-4 mx-auto rounded-lg shadow-lg border flex flex-nowrap p-3">
-                    <VinHome></VinHome>
+                  <div className="w-[95%] h-[70px] mt-4 mx-auto rounded-lg shadow-lg border flex justify-evenly flex-nowrap p-3">
+                    <VinHome className="w-[13%]"></VinHome>
 
-                    <div className="flex flex-col ml-2">
+                    <div className="flex flex-col ">
                       <h5 className="font-lato font-bold text-xs">VinHomes</h5>
                       <p className=" bg-side-color text-ssm">Bất động sản</p>
                     </div>
 
-                    <div className="flex flex-col ml-20">
+                    <div className="flex flex-col ">
                       <h4 className="font-lato font-bold text-xs">
                         VND 50.000.000
                       </h4>
@@ -280,22 +283,22 @@ function LandingPage() {
                       </p>
                     </div>
 
-                    <h2 className="font-lato font-bold text-xs ml-16 bg-font-color">
+                    <h2 className="font-lato font-bold text-xs  bg-font-color">
                       +10.75%
                     </h2>
                   </div>
 
-                  <div className="w-[95%] h-[70px] mt-4 mx-auto rounded-lg shadow-lg border flex flex-nowrap p-3">
-                    <Apax></Apax>
+                  <div className="w-[95%] h-[70px] mt-4 mx-auto rounded-lg shadow-lg border flex flex-nowrap p-3 justify-evenly">
+                    <Apax className="w-[13%]"></Apax>
 
-                    <div className="flex flex-col ml-2">
+                    <div className="flex flex-col ">
                       <h5 className="font-lato font-bold text-xs">APAX</h5>
                       <p className=" bg-side-color text-ssm">
                         Teaching Platform
                       </p>
                     </div>
 
-                    <div className="flex flex-col ml-[72px]">
+                    <div className="flex flex-col ">
                       <h4 className="font-lato font-bold text-xs">
                         VND 50.000.000
                       </h4>
@@ -304,7 +307,7 @@ function LandingPage() {
                       </p>
                     </div>
 
-                    <h2 className="font-lato font-bold text-xs ml-16 bg-font-color">
+                    <h2 className="font-lato font-bold text-xs  bg-font-color">
                       +4.75%
                     </h2>
                   </div>
@@ -399,13 +402,15 @@ function LandingPage() {
 
               <div className="w-[48%] shadow-left shadow-middle   h-[500px] mt-10 border  relative rounded-3xl flex justify-center">
                 <div className="w-[95%] h-[60px] border  mt-10 rounded-lg flex justify-evenly p-2">
-                  <div className="w-[18%] h-[80%] border"><Logo1 className="w-full"></Logo1></div>
+                  <div className="w-[18%] h-[80%] "><Logo1 className="w-full mt-1"></Logo1></div>
                   <h1 className="w-[20%] text-xs font-bold">LienViet PostBank</h1>
-                  <div className="w-[25%] h-[88%] border"></div>
+                  <div className="w-[25%] h-[88%] "><Graph1 className="w-full mt-1"></Graph1></div>
                
                   <h1 className="text-xs font-bold">VND 24,321 <h1 className="text-right bg-font-color">+3.14%</h1></h1>
                    
                 </div>
+
+
               </div>
 
               <div className="w-[35%] absolute h-[200px] left-[32%]  rounded-lg  top-[32%] p-0 m-0">
