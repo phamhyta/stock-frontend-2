@@ -115,6 +115,7 @@ function LandingPage() {
 
   return (
     <React.Fragment>
+      
       <div className="w-full h-screen overflow-auto bg-white  ">
         <nav className="text-color font-lato m-0 p-0">
           <div className="max-w-full w-full h-56  bg-white text-color font-lato relative">
