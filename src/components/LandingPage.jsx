@@ -36,8 +36,18 @@ import {ReactComponent as  RoundCircle} from "../assets/svg/WelcomeGoStock/Round
 import {ReactComponent as  LeftGraph} from "../assets/svg/LeftSide/LeftGraph.svg";
 import {ReactComponent as  MonthlyView} from "../assets/svg/LeftSide/MonthlyView.svg";
 import {ReactComponent as  Logo1} from "../assets/svg/LeftSide/logo1.svg";
+import {ReactComponent as  Logo2} from "../assets/svg/LeftSide/logo2.svg";
 import {ReactComponent as  Graph1} from "../assets/svg/LeftSide/graph1.svg";
+import {ReactComponent as  Graph2} from "../assets/svg/LeftSide/graph2.svg";
+import {ReactComponent as  Graph3} from "../assets/svg/LeftSide/graph3.svg";
+import {ReactComponent as  Graph4} from "../assets/svg/LeftSide/graph4.svg";
+import {ReactComponent as  MenuIcon} from "../assets/svg/LeftSide/MenuIcon.svg";
 
+
+
+
+//footer
+import { Footer } from './layout';
 function LandingPage() {
   const items = [
     {
@@ -121,7 +131,7 @@ function LandingPage() {
           <div className="max-w-full w-full h-56  bg-white text-color font-lato relative">
             <Decorate className="absolute" />
 
-            <div className="flex flex-nowrap max-w-full justify-between items-center border-yellow-300    ">
+            <div className="flex flex-nowrap max-w-full  justify-between items-center border-yellow-300    ">
               <div className="flex  flex-nowrap ml-6 my-8  ">
                 <div className="   mr-2  h-9  overflow-hidden">
                   <Icon className="h-full"></Icon>
@@ -209,8 +219,8 @@ function LandingPage() {
           </form>
 
           <div className=" mx-auto  w-[85%]  h-[900px] bg-cover overflow-hidden mt-10  relative">
-            <div className="absolute w-[78%]  h-[800px] ml-12 rounded-2xl flex justify-center items-center mt-2 font-roboto">
-              <div className="w-[91%] border h-[91%]  rounded-2xl grid grid-cols-3 font-roboto overflow-hidden">
+            <div className="absolute w-[78%] border h-[800px] ml-12 rounded-2xl flex justify-center items-center mt-2 font-roboto">
+              <div className="w-[91%]  h-[91%]  rounded-2xl grid grid-cols-3 font-roboto overflow-hidden">
                 <div className="col-span-1   bg-main-picture p-6  ">
                   <div className="flex mb-10   ">
                     <IconDollar className="mr-2 w-[50px] h-[35px]"></IconDollar>
@@ -401,20 +411,65 @@ function LandingPage() {
                 <p className="text-color text-sm font-bold">343,323</p>
               </div>
 
-              <div className="w-[48%] shadow-left shadow-middle   h-[500px] mt-10 border  relative rounded-3xl flex justify-center">
-                <div className="w-[95%] h-[60px] border  mt-10 rounded-lg flex justify-evenly p-2">
+              
+
+              <div className="w-[48%] shadow-left shadow-middle   h-[500px] mt-10 border  relative rounded-3xl pt-7">
+               
+                <div className="w-[95%] h-[55px]  rounded-lg flex justify-evenly p-2 mx-auto shadow-ssm">
                   <div className="w-[18%] h-[80%] "><Logo1 className="w-full mt-1"></Logo1></div>
                   <h1 className="w-[20%] text-xs font-bold">LienViet PostBank</h1>
                   <div className="w-[25%] h-[88%] "><Graph1 className="w-full mt-1"></Graph1></div>
-               
                   <h1 className="text-xs font-bold">VND 24,321 <h1 className="text-right bg-font-color">+3.14%</h1></h1>
-                   
                 </div>
 
+                <div className="w-[95%] h-[55px]  rounded-lg mt-2 flex justify-evenly p-2 mx-auto shadow-ssm">
+                  <div className="w-[18%] h-[80%] "><Logo2 className="w-full mt-1"></Logo2></div>
+                  <h1 className="w-[20%] text-xs font-bold">HPCS</h1>
+                  <div className="w-[25%] h-[88%] "><Graph2 className="w-full mt-1"></Graph2></div>
+                  <h1 className="text-xs font-bold">VND 84,000 <h1 className="text-right bg-font-color">+0.36%</h1></h1>
+                </div>
 
+                <div className="w-[95%] h-[55px]  rounded-lg mt-2 flex justify-evenly p-2 mx-auto shadow-ssm">
+                  <div className="w-[18%] h-[80%] "><Logo1 className="w-full mt-1"></Logo1></div>
+                  <h1 className="w-[20%] text-xs font-bold">VinGroup</h1>
+                  <div className="w-[25%] h-[88%] "><Graph3 className="w-full mt-1"></Graph3></div>
+                  <h1 className="text-xs font-bold">VND 106,000<h1 className="text-right bg-font-color">+5.92%</h1></h1>
+                </div>
+
+                <div className="w-[95%] h-[55px]  rounded-lg mt-2 flex justify-evenly p-2 mx-auto shadow-ssm">
+                  <div className="w-[18%] h-[80%] "><Logo1 className="w-full mt-1"></Logo1></div>
+                  <h1 className="w-[20%] text-xs font-bold">FPT</h1>
+                  <div className="w-[25%] h-[88%] "><Graph4 className="w-full mt-1"></Graph4></div>
+                  <h1 className="text-xs font-bold">VND 78,842<h1 className="text-right bg-font-color">+6.72% </h1></h1>
+                </div>
+
+                <div className="w-[80%] flex justify-between h-[85px] relative    mt-12 mx-auto">
+                  <div className="w-[45%]  h-full bg-gray-side">
+                    <h1 className="bg-font-color font-bold text-2xl text-center mt-3">+2.01%</h1>
+
+                    <div className="flex justify-center">
+                        <Logo1 className="mr-2"></Logo1>
+                        <p className="text-xs mt-2 font-bold ">HPCS</p>
+                    </div>
+                  </div>
+
+                  <div className="w-[45%]  h-full bg-gray-side">
+                    <h1 className="bg-font-color font-bold text-2xl text-center mt-3">+7.05%</h1>
+
+                    <div className="flex justify-center">
+                        <Logo1 className="mr-2"></Logo1>
+                        <p className="text-xs mt-2 font-bold ">LVPB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bottom-0 absolute w-full h-[50px] bg-main-green  rounded-b-3xl py-3 flex justify-center">
+                  <MenuIcon/>
+                </div>
               </div>
+              
 
-              <div className="w-[35%] absolute h-[200px] left-[32%]  rounded-lg  top-[32%] p-0 m-0">
+              <div className="w-[35%] absolute h-[210px] left-[32%]  rounded-lg  top-[32%] p-0 m-0">
                 <MonthlyView className="w-full m-0"></MonthlyView>
 
               </div>
@@ -549,7 +604,7 @@ function LandingPage() {
           </div>
         </main>
 
-        <footer className=" w-full h-auto  bg-footer-color  flex justify-center p-7">
+        {/* <footer className=" w-full h-auto  bg-footer-color  flex justify-center p-7">
           <div className="w-[86%] grid grid-cols-11  ">
             <nav className="col-span-7 pl-6 font-roboto text-white flex flex-col w-full text-lg">
               <div className="  h-14 w-full flex  align-center mb-12 ">
@@ -598,7 +653,9 @@ function LandingPage() {
               </nav>
             </div>
           </div>
-        </footer>
+        </footer> */}
+
+        <Footer/>
       </div>
     </React.Fragment>
   );
