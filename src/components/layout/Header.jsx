@@ -8,7 +8,7 @@ const Header = () => {
   const handleOpen = () => {
     setOpen(!open);
   };
-  
+
   return (
     <div className="flex p-6 border-b-2 text-color">
       <div className="w-1/3 xl:w-1/6 flex justify-center">

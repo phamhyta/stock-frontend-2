@@ -6,7 +6,7 @@ const Header = () => {
     <div className="text-color font-lato m-0 p-0">
       <div className="max-w-full w-full h-56  bg-white text-color font-lato relative">
         <Decorate className="absolute" />
-        <div className="flex flex-nowrap max-w-full justify-between items-center border-yellow-300    ">
+        <div className="flex flex-nowrap max-w-full  justify-between items-center border-yellow-300    ">
           <div className="flex  flex-nowrap ml-6 my-8  ">
             <div className="   mr-2  h-9  overflow-hidden">
               <Icon className="h-full"></Icon>
@@ -46,9 +46,9 @@ const Header = () => {
             Đăng Nhập
           </button>
         </div>
-        <div className="text-center mt-1  font-lato text-3xl leading-11 font-lato bg-font-color font-bold">
+        <h1 className="text-center mt-1  font-lato text-3xl leading-11 font-lato bg-font-color font-bold">
           Nhanh Chóng Phát triển <br></br>Tài Chính Của Bạn Với GoStock
-        </div>
+        </h1>
         <br></br>
       </div>
     </div>
