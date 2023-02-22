@@ -17,7 +17,6 @@ const Home = () => {
       </div>
       <div className="bg-tintMain">
         <Outlet />
-        <h1>Đặng Minh Hiếu</h1>
       </div>
       <div>
         <Footer />
