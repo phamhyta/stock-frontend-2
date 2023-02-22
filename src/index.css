@@ -16,7 +16,27 @@ body {
   background-color: #2BCA89;
 }
 
+.recharts-xAxis, .recharts-cartesian-axis-line, 
+.recharts-cartesian-axis-tick-line, .recharts-cartesian-grid-horizontal, 
+.recharts-cartesian-grid-vertical {
+  display: none;
+}
+
+.recharts-legend-item-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-weight: 700;
+  font-size: 20px;
+  color: #BFC3C8;
+}
 .menu-hover:hover {
+  color: #2BCA89;
+  border-bottom: #2BCA89 solid 2px;
+}
+.active-item {
   color: #2BCA89;
   border-bottom: #2BCA89 solid 2px;
 }
@@ -65,4 +85,11 @@ body {
  /* background-color: rgb(246,254,249); */
  background: linear-gradient(90.26deg, rgba(207, 225, 217, 0.18) -0.04%, rgba(219, 255, 238, 0.06) 28.81%, rgba(227, 253, 235, 0.27) 64.08%, rgba(158, 249, 189, 0.06) 95.91%);
  border: 1px solid #FFFFFF;
+}
+
+.height-chart {
+  height: 500px;
+}
+.height-chart-2 {
+  height: 372px;
 }
