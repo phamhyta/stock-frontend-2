@@ -1,6 +1,6 @@
-import React from "react";
-// import "./landing.css";
+import React from 'react';
 
+<<<<<<< HEAD
 //import * as svg from "../assets/svg  ";
 import { ReactComponent as Decorate } from "../assets/svg/Decorate.svg";
 import { ReactComponent as Left_chart } from "../assets/svg/LeftChart.svg";
@@ -28,6 +28,11 @@ import {ReactComponent as TechComBank} from "../assets/svg/WelcomeGoStock/TechCo
 import {ReactComponent as  RoundCircle} from "../assets/svg/WelcomeGoStock/RoundCircle.svg";
 
 // import Board from "../assets/img/Board.jpg";
+=======
+import { ReactComponent as SidePicture } from '../assets/svg/SidePicture.svg';
+import { Footer } from './layout';
+import { Dashboard, Header, Main } from './cpnlandingpage';
+>>>>>>> 0ea9d43e8c075c54ca993fbd7b7e5995c8e7cd29
 
 //first left side
 import {ReactComponent as  LeftGraph} from "../assets/svg/LeftSide/LeftGraph.svg";

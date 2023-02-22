@@ -3,6 +3,12 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+<<<<<<< HEAD
+=======
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+>>>>>>> 0ea9d43e8c075c54ca993fbd7b7e5995c8e7cd29
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -43,6 +49,7 @@ body {
 #root {
   height: 100%;
 }
+
 .menu-item {
     font-weight: 700;
     font-size: 19px;
@@ -224,6 +231,7 @@ body {
     line-height: 20px;
 }
 
+<<<<<<< HEAD
 .shadow-left {
     box-shadow: -1.50848px 6.03392px 12.0678px rgba(0, 191, 113, 0.28);
 }
@@ -238,3 +246,5 @@ body {
 .height-chart-2 {
   height: 372px;
 }
+=======
+>>>>>>> 0ea9d43e8c075c54ca993fbd7b7e5995c8e7cd29
