@@ -16,7 +16,27 @@ body {
   background-color: #2BCA89;
 }
 
+.recharts-xAxis, .recharts-cartesian-axis-line, 
+.recharts-cartesian-axis-tick-line, .recharts-cartesian-grid-horizontal, 
+.recharts-cartesian-grid-vertical {
+  display: none;
+}
+
+.recharts-legend-item-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-weight: 700;
+  font-size: 20px;
+  color: #BFC3C8;
+}
 .menu-hover:hover {
+  color: #2BCA89;
+  border-bottom: #2BCA89 solid 2px;
+}
+.active-item {
   color: #2BCA89;
   border-bottom: #2BCA89 solid 2px;
 }
@@ -210,4 +230,11 @@ body {
 
 .shadow-middle {
     box-shadow: 0px 6.03392px 19.6102px rgba(10, 16, 72, 0.23);
+}
+
+.height-chart {
+  height: 500px;
+}
+.height-chart-2 {
+  height: 372px;
 }
