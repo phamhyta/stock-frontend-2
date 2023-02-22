@@ -5,9 +5,6 @@ import React from "react";
 import { ReactComponent as Decorate } from "../assets/svg/Decorate.svg";
 import { ReactComponent as Left_chart } from "../assets/svg/LeftChart.svg";
 import { ReactComponent as Vectors } from "../assets/svg/vector.svg";
-
-import { ReactComponent as IconRoundFooter } from "../assets/svg/Icon_Round_footer.svg";
-
 import { ReactComponent as MessFooter } from "../assets/svg/messenger_footer.svg";
 import { ReactComponent as GmailFooter } from "../assets/svg/GmailFooter.svg"; //GmailFooter ->
 import { ReactComponent as Icon } from "../assets/svg/Icon.svg";
@@ -126,7 +123,7 @@ function LandingPage() {
   return (
     <React.Fragment>
       
-      <div className="w-full h-screen overflow-auto bg-white  ">
+      <div className="w-full max-w-7xl h-screen overflow-y-scroll overflow-x-hidden bg-white  ">
         <nav className="text-color font-lato m-0 p-0">
           <div className="max-w-full w-full h-56  bg-white text-color font-lato relative">
             <Decorate className="absolute" />
@@ -397,7 +394,7 @@ function LandingPage() {
 
 
 
-          <div className="mt-10 mx-auto w-[85%] grid grid-cols-11 border  ">
+          <div className="mt-10 mx-auto w-[85%]   grid grid-cols-11 border  ">
             <div className="col-span-6 w-full  border h-[600px] overflow-hidden  flex relative ">
              
               <div className="shadow-left w-[48%] ml-0 mr-[4%] h-[500px] border  relative rounded-3xl flex flex-col pl-6 font-lato bg-white">
@@ -457,7 +454,7 @@ function LandingPage() {
                     <h1 className="bg-font-color font-bold text-2xl text-center mt-3">+7.05%</h1>
 
                     <div className="flex justify-center">
-                        <Logo1 className="mr-2"></Logo1>
+                        <Logo2 className="mr-2"></Logo2>
                         <p className="text-xs mt-2 font-bold ">LVPB</p>
                     </div>
                   </div>
