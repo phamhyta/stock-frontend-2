@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -44,49 +47,193 @@ body {
   height: 100%;
 }
 
-.grid-cols-3-9 {
-  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
-}
-
 .menu-item {
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 19px;
-  text-decoration: none;
-  display:inline-block;
-  /* background-color: red; */
-  margin-right: 25px;
-  color:rgba(10, 16, 72, 0.9);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 19px;
+    text-decoration: none;
+    display:inline-block;
+    /* background-color: red; */
+    margin-right: 25px;
+    color:rgba(10, 16, 72, 0.9);
 }
 
 
 
 * {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .bg-color-icon {
- background-color:  #5BD3A3;
+   background-color:  #5BD3A3;
 }
 
 
 .bg-color-main {
-  background-color: #fcfcfc;
+    background-color: #fcfcfc;
 }
 .text-color {
-  color: rgba(10, 16, 72, 0.9);
+    color: rgba(10, 16, 72, 0.9);
 }
 
 .font-lato {
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
+
 
 .bg-color {
- /* background-color: rgb(246,254,249); */
- background: linear-gradient(90.26deg, rgba(207, 225, 217, 0.18) -0.04%, rgba(219, 255, 238, 0.06) 28.81%, rgba(227, 253, 235, 0.27) 64.08%, rgba(158, 249, 189, 0.06) 95.91%);
- border: 1px solid #FFFFFF;
+   /* background-color: rgb(246,254,249); */
+   background: linear-gradient(90.26deg, rgba(207, 225, 217, 0.18) -0.04%, rgba(219, 255, 238, 0.06) 28.81%, rgba(227, 253, 235, 0.27) 64.08%, rgba(158, 249, 189, 0.06) 95.91%);
+   border: 1px solid #FFFFFF;
 }
 
+.bg-green-button {
+    background-color: #20D088;
+}
+
+.bg-font-color {  
+    color: #00BF71;
+}
+.vongtrontam1 {
+    box-sizing: border-box;
+
+    position: fixed;
+    width:  330px;
+    height: 330px;
+    left: -54px;
+    top: -197px;
+    /* position: relative; */
+
+    border: 2.5px solid rgba(159, 230, 199, 0.8);
+    border-radius: 50%;
+}
+
+
+ .vongtrontam2 {
+    box-sizing: border-box;
+    position: fixed;
+    width:  330px;
+    height: 330px;
+    left: -101px;
+    top: -162px;
+    /* position: absolute; */
+
+    border: 2.5px solid rgba(159, 230, 199, 0.8);
+    border-radius: 50%;
+}
+
+.leading-11 {
+    line-height:55px;
+}
+
+.box-shadow-button {
+    box-shadow: 0px 4.09149px 14.3202px rgba(50, 225, 154, 0.61);
+}
+
+.round-icon {
+    width: 59.33px;
+    height: 57.28px;
+    transform: rotate(-0.17deg);
+    background: #D8F2E8;
+}
+
+.icon {
+    color: #5BD3A3;
+    transform: rotate(-0.17deg);
+}
+
+.bg-color-hidden {
+    background: rgba(142, 255, 209, 0.07);
+
+}
+
+
+.h-main-welcome {
+    height: 700px;
+}
+
+.bg-color-main {
+    color: #fbfbfb;
+}
+
+.text-main-green {
+    color: #00BF71;
+}
+
+.text-main-linear {
+    background: -webkit-linear-gradient(rgba(57, 109, 244, 0.63),rgba(98, 252, 225, 0.83));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-main-green {
+    background-color: #00BF71;
+}
+
+.font-inters{
+    font-family: 'Inter','Times New Roman', Times, serif;
+}
+
+
+.main-second-color {
+    color: #002966;
+}
+
+.bg-footer-color {
+    background-color: #2BCA89;
+}
+
+.footer-color {
+    color: #2BCA89;
+}
+
+.bg-main-picture {
+    background-color: rgb(230,249,241);
+}
+
+.bg-main-button-picture {
+    background-color: #2BCA89;
+}
+
+.bg-side-color {
+    color: #BFC3C8;
+}
+
+.font-side-color-2 {
+    color:#1D2939;
+}
+
+.font-side-color {
+    color:#00BF71;
+}
+
+.font-side-color2 {
+    color:#0047B3;
+}
+
+.font-side-color-w {
+    color: #9fa5b3;
+}
+
+.font-side-color-wt {
+    color: #D0D5DD;
+}
+
+.font-side-color-wt2 {
+    color: #344054;
+}
+.text-ssm {
+    font-size: 8px;
+    line-height: 20px;
+}
+
+.shadow-left {
+    box-shadow: -1.50848px 6.03392px 12.0678px rgba(0, 191, 113, 0.28);
+}
+.shadow-middle {
+    box-shadow: 0px 6.03392px 19.6102px rgba(10, 16, 72, 0.23);
+}
 .height-chart {
   height: 500px;
 }

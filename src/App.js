@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import { Dashboard, Home, HomePage } from './components';
+import { LandingPage, Home, HomePage } from './components';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}>
-        {/* <Route path="dashboard" element={<Dashboard />} /> */}
+       <Route path="/" element={<Home />}>
         <Route path="home" element={<HomePage />} />
       </Route>
+      <Route path="/dashboard" element={<LandingPage />} />
     </Routes>
   );
 }
