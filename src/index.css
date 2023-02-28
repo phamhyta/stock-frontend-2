@@ -68,7 +68,9 @@ body {
    background-color:  #5BD3A3;
 }
 
-
+.shadow-wt {
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
 .bg-color-main {
     background-color: #fcfcfc;
 }
@@ -80,6 +82,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.bg-color-wf {
+   background-color: #faf9ff;
+}
 
 
 .bg-color {
@@ -180,7 +185,7 @@ body {
     color: #002966;
 }
 
-.bg-footer-color {
+bg-side-color {
     background-color: #2BCA89;
 }
 
@@ -196,7 +201,7 @@ body {
     background-color: #2BCA89;
 }
 
-.bg-side-color {
+.bg-side-color-ww {
     color: #BFC3C8;
 }
 
@@ -233,4 +238,16 @@ body {
 }
 .shadow-middle {
     box-shadow: 0px 6.03392px 19.6102px rgba(10, 16, 72, 0.23);
+}
+.font-blue-color-wt{
+    color: #0065FF;
+}
+
+.shadow-wt {
+    box-shadow: 0px 3.29697px 3.29697px rgba(0, 0, 0, 0.05);
+border-radius: 3.29697px;
+}
+
+.bg-gray-wt {
+    background-color:  rgba(217, 217, 217, 0.15);;
 }

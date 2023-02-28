@@ -7,7 +7,7 @@ import { Dashboard, Header, Main } from './cpnlandingpage';
 function LandingPage() {
   return (
     <React.Fragment>
-      <div className="w-full h-screen bg-white  ">
+      <div className="w-full h-screen bg-white overflow-y-auto overflow-x-hidden  ">
         <Header />
         <div className="relative  left-[80%] ">
           <SidePicture className="absolute  "></SidePicture>
