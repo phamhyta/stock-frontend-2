@@ -37,7 +37,9 @@ import { ReactComponent as LeftChart } from "../../assets/svg/Board3/LeftBarChar
 import { ReactComponent as TotalEquity } from "../../assets/svg/Board3/TotalEquity.svg";
 import { ReactComponent as RightBar } from "../../assets/svg/Board3/RightBar.svg";
 import { ReactComponent as ChartScreen } from "../../assets/svg/Board3/ChartScreen.svg";
+import { ReactComponent as SearchIcon } from "../../assets/svg/Board3/SearchIcon.svg";
 
+import { ReactComponent as DecorBg } from "../../assets/svg/DecorBg.svg";
 const Main = () => {
   const tag = "<";
 
@@ -112,7 +114,6 @@ const Main = () => {
             <p className="bg-font-color lg:text-lg text-[9px]  lg:mb-2">
               +6.2%
             </p>
-
             <div className="w-[full] h-[20%]  lg:h-[40%] mb-2   ">
               <LeftGraph className="w-full lg:pb-0 pb-[107px]"></LeftGraph>
             </div>
@@ -124,7 +125,7 @@ const Main = () => {
             </p>
           </div>
 
-          <div className="w-[48%] shadow-left shadow-middle h-[265px]  lg:h-[500px] mt-10 border  relative rounded-3xl  lg:rounded-3xl pt-5 lg:pt-7">
+          <div className="w-[48%] lg:shadow-lg  h-[265px]  lg:h-[500px] mt-10 border  relative rounded-3xl  lg:rounded-3xl pt-5 lg:pt-7">
             <div className="w-[95%] lg:w-[93%] lg:h-[55px] mb-2 shadow-wt h-[25px] rounded-lg flex justify-evenly p-1 lg:p-2 mx-auto shadow-slg items-center">
               <div className="w-[18%] h-[80%] ">
                 <Logo1 className="w-full lg:pb-0 pb-1 lg:mt-1"></Logo1>
@@ -139,7 +140,6 @@ const Main = () => {
                 VND 24,321 <h1 className="text-right bg-font-color ">+3.14%</h1>
               </h1>
             </div>
-
             <div className="w-[95%] lg:w-[93%] lg:h-[55px]  mb-2 shadow-wt h-[25px]  rounded-lg flex justify-evenly p-1 lg:p-2 mx-auto shadow-slg items-center">
               <div className="w-[18%] h-[80%] ">
                 <Logo2 className="w-full lg:pb-0 pb-1 lg:mt-1"></Logo2>
@@ -152,7 +152,6 @@ const Main = () => {
                 VND 24,321 <h1 className="text-right bg-font-color ">+3.14%</h1>
               </h1>
             </div>
-
             <div className="w-[95%] lg:w-[93%] lg:h-[55px]  mb-2 shadow-wt h-[25px]  rounded-lg flex justify-evenly p-1 lg:p-2 mx-auto shadow-slg items-center">
               <div className="w-[18%] h-[80%] ">
                 <Logo1 className="w-full lg:pb-0 pb-1 lg:mt-1"></Logo1>
@@ -235,12 +234,10 @@ const Main = () => {
           </button>
         </section>
       </div>
-
-      <div className="lg:relative h-[5px] overflow-visible    lg:left-[79%] ">
+      <div className="lg:relative h-[5px] overflow-visible lg:left-[79%] ">
         <SidePictureRound className="lg:absolute lg:visible invisible"></SidePictureRound>
       </div>
-
-      <div className="lg:mt-10  mx-auto lg:w-[88%] lg:grid lg:grid-cols-2   ">
+      <div className="lg:mt-10 mx-auto lg:w-[88%] lg:grid lg:grid-cols-2   ">
         <section className="lg:grid-cols-1 text-center lg:text-left lg:p-10">
           <h1 className="font-inters  lg:leading-[2rem] font-bold lg:font-medium lg:text-3xl text-xl lg:mt-0 mt-5   text-main-green">
             Tìm ra những cổ phiếu phát triển trong tương lai{" "}
@@ -301,8 +298,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-
-      <div className="mt-10 w-full lg:h-[600px] h-[500px]    relative lg:flex lg:justify-center">
+      <div className="mt-10 w-full lg:h-[600px] h-[500px] relative lg:flex lg:justify-center">
         <div className="right-0 top-0 w-full  h-[220px] overflow-hidden relative mx-auto">
           <Vectors className="w-full absolute lg:visible invisible"></Vectors>
         </div>
@@ -316,11 +312,9 @@ const Main = () => {
                   <IconDollar className="lg:mr-1 mr-1 w-[11px] lg:w-[50px] lg:h-[35px]"></IconDollar>
                   <h1 className="lg:text-lg mt-1 text-[4px]">Gostock</h1>
                 </div>
-
                 <button className="lg:w-[80%] w-[70%] ml-[10%] lg:h-[33px] lg:text-xs lg:mb-4 h-[13px] rounded-lg mb-4  text-[7px]   bg-main-button-picture text-center lg:rounded-lg  text-white">
                   Đầu tư ngay
                 </button>
-
                 <ul>
                   {items.map(({ Icon, name }, index) => (
                     <li
@@ -340,8 +334,31 @@ const Main = () => {
                 </ul>
               </div>
               {/* main */}
-              <div className="w-full lg:top-0  lg:left-6 absolute bg-white">
-                <BoardStock className="lg:w-full   " />
+              <div className="w-full h-full bg-white lg:pl-[180px] lg:pt-7 flex flex-col">
+                <div className="flex w-full">
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                      <button
+                        type="submit"
+                        class="p-1 focus:outline-none focus:shadow-outline"
+                      >
+                        <SearchIcon />
+                      </button>
+                    </span>
+                    <input
+                      type="search"
+                      name="q"
+                      class="border lg:w-[290px] lg:mr-[120px] py-2 text-sm text-white bg-white rounded-md lg:pl-10"
+                      placeholder="Nhập mã cổ phiếu"
+                    />
+                  </div>
+                  <IconBell className="lg:mr-10 lg:mt-2" />
+                  <IconHuman className="lg:mt-2" />
+                </div>
+
+                <div className="lg:mt-10 w-[95%] h-[70%]">
+                  <BoardStock className="w-full lg:pb-10" />
+                </div>
               </div>
             </div>
           </div>
@@ -368,9 +385,9 @@ const Main = () => {
       </div>
 
       <div className="w-full lg:h-[600px] h-[500px] relative lg:flex lg:justify-center">
-        <div className="top-5 lg:mt-0 mt-10  mx-auto lg:w-[95%] w-full lg:grid lg:grid-cols-11 lg:ml-[90px] absolute ">
+        <div className="top-5 lg:mt-0 mt-10 mx-auto lg:w-[95%] w-full lg:grid lg:grid-cols-11 lg:ml-[90px] absolute ">
           <section className="lg:col-span-3   ">
-            <h1 className="mt-10 font-inters  leading-[2rem] lg:text-left text-center  text-xl font-bold  lg:text-[26px] text-main-green">
+            <h1 className="mt-10 font-inters leading-[2rem] lg:text-left text-center  text-xl font-bold  lg:text-[26px] text-main-green">
               Phân tích mọi cổ phiếu chỉ trong 3 phút
             </h1>
             <p className="font-inters main-second-color  font-medium text-black text-center lg:text-left text-[17px] mt-[45px]  ">
@@ -379,8 +396,7 @@ const Main = () => {
               phiếu trong cùng nhóm ngành nhằm giúp bạn tự tin hơn trong quyết
               định đầu tư
             </p>
-
-            <button className="bg-main-green  lg:rounded-lg w-[45%] rounded lg:w-[55%] h-[38px] lg:h-[61px] lg:ml-0 ml-[70px]  shadow-md  text-center mt-[40px] mb-[90px] lg:mb-0 lg:mt-[70px]">
+            <button className="bg-main-green lg:rounded-lg w-[45%] rounded lg:w-[55%] h-[38px] lg:h-[61px] lg:ml-0 ml-[70px]  shadow-md  text-center mt-[40px] mb-[90px] lg:mb-0 lg:mt-[70px]">
               <a
                 className="text-lg lg:text-base font-roboto text-white"
                 href="/"
@@ -422,20 +438,20 @@ const Main = () => {
                 </ul>
               </div>
               {/* main */}
-              <div className="lg:top-0 lg:left-0 w-full  absolute  lg:h-full  bg-white">
-                <BarChart className="lg:w-[110%]   lg:pb-5   " />
+              <div className="lg:top-0 lg:left-0 w-full absolute lg:h-full  bg-white">
+                <BarChart className="lg:w-[110%] lg:pb-5" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full lg:h-[700px] relative  ">
+      <div className="w-full lg:h-[700px] relative">
         <div className="relative w-full lg:h-[20px] lg:pt-5 ">
           <VectorDecor />
         </div>
 
-        <div className="mt-10 mx-auto lg:w-[85%] w-[93%]  lg:grid lg:ml-10 lg:grid-flow-row lg:grid-cols-11 absolute  ">
+        <div className="mt-10 mx-auto lg:w-[85%] w-[93%] lg:grid lg:ml-10 lg:grid-flow-row lg:grid-cols-11 absolute  ">
           <section className="order-2 lg:order-1 lg:col-span-5 lg:p-10 lg:px-5 lg:mb-0 mb-6">
             <h1 className="font-inters  mt-7 lg:leading-[3rem]  lg:text-left text-center font-bold text-xl  lg:text-3xl text-main-green">
               Giảm chỉ phí doanh nghiệp và tăng tối đa lợi nhuận
@@ -457,8 +473,8 @@ const Main = () => {
             </button>
           </section>
 
-          <div className="order-1 lg:order-2 lg:col-span-6 w-full h-[345px] lg:h-[600px] overflow-hidden  flex relative ">
-            <div className="shadow-left w-[48%] ml-10  lg:h-[550px] h-[275px]  mt-12   relative rounded-3xl flex flex-col  font-lato bg-white">
+          <div className="order-1 lg:order-2 lg:col-span-6 w-full h-[345px] lg:h-[600px] overflow-hidden flex relative ">
+            <div className="shadow-left w-[48%] ml-10 lg:h-[550px] h-[275px] mt-12 relative rounded-3xl flex flex-col font-lato bg-white">
               <div className="flex w-full  text-center  items-center border-b h-[60px] lg:mb-1">
                 <p className=" text-3xl lg:font-light text-[#667085] lg:mb-2 lg:mx-2 mt-2 ">
                   {tag}
@@ -478,6 +494,12 @@ const Main = () => {
                 </div>
 
                 <div className="lg:mt-16 lg:pl-2 w-full overflow-hidden ">
+                  <h2 className="text-[#344054] lg:text-xs">
+                    1.4 Total Equity
+                  </h2>
+                  <p className="text-center lg:text-[10px] text-[#667085] lg:m-2">
+                    Tổng tài sản của các ngân hàng
+                  </p>
                   <TotalEquity />
                 </div>
               </div>
@@ -487,7 +509,7 @@ const Main = () => {
               </div>
             </div>
 
-            <div className="w-[48%] shadow-left shadow-middle h-[265px]  lg:h-[550px] border  absolute lg:left-[50%] rounded-3xl  lg:rounded-3xl bg-white">
+            <div className="w-[48%] shadow-left shadow-middle h-[265px] lg:h-[550px] border absolute lg:left-[50%] rounded-3xl lg:rounded-3xl bg-white">
               <div className="flex w-full  text-center  items-center border-b h-[60px] lg:mb-1">
                 <p className=" text-3xl text-[#667085] lg:mb-2 lg:mx-2 mt-2 ">
                   {tag}
@@ -500,6 +522,10 @@ const Main = () => {
                 <RightBar className="w-full lg:bottom-0 lg:pb-10" />
               </div>
               <div className="lg:pl-2 w-full lg:mt-[5px]  ">
+                <h2 className="text-[#344054] lg:text-xs">1.4 Total Equity</h2>
+                <p className="text-center lg:text-[10px] text-[#667085] lg:m-2">
+                  Tổng tài sản của các ngân hàng
+                </p>
                 <ChartScreen />
               </div>
 
@@ -510,22 +536,24 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <div className="w-full relative h-[500px] overflow-hidden">
+        <div className="m-20 mx-auto w-[55%] align-center flex flex-col justify-center mb-[200px">
+          <h1 className="mt-10 font-inters leading-[2rem] font-medium text-4xl text-main-green text-center">
+            Trải Nghiệm Hoàn Toàn Miễn Phí
+          </h1>
 
-      <div className="mt-10 mx-auto w-[55%]   align-center  flex flex-col justify-center mb-[200px]   ">
-        <h1 className="mt-10 font-inters  leading-[2rem] font-medium text-4xl text-main-green text-center">
-          Trải Nghiệm Hoàn Toàn Miễn Phí
-        </h1>
+          <p className="font-inters main-second-color font-medium text-lg mt-[45px] text-center  ">
+            Tham gia GoStock cùng các nhà đầu tư chuyên nghiệp, Dẫn đầu và chiến
+            thắng thị trường cùng GoStock
+          </p>
 
-        <p className="font-inters main-second-color font-medium text-lg mt-[45px] text-center  ">
-          Tham gia GoStock cùng các nhà đầu tư chuyên nghiệp, Dẫn đầu và chiến
-          thắng thị trường cùng GoStock
-        </p>
-
-        <button className="bg-main-green  rounded-lg w-[35%] h-[61px]  shadow-md self-center  mt-[70px]">
-          <a className="text-base font-roboto text-white" href="/">
-            Đăng Ký Ngay
-          </a>
-        </button>
+          <button className="bg-main-green  rounded-lg w-[35%] h-[61px]  shadow-md self-center  mt-[70px]">
+            <a className="text-base font-roboto text-white" href="/">
+              Đăng Ký Ngay
+            </a>
+          </button>
+        </div>
+        <DecorBg className="absolute lg:top-0 lg:right-0 lg:pb-12" />
       </div>
     </div>
   );
