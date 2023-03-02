@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Treemap, ResponsiveContainer } from 'recharts';
+import { Treemap, ResponsiveContainer } from 'recharts';
 import ReactApexChart from 'react-apexcharts';
 
 const series = [
