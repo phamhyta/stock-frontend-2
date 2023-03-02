@@ -7,21 +7,21 @@ import { Dashboard, Header, Main } from './cpnlandingpage';
 function LandingPage() {
   return (
     <React.Fragment>
-      <div className="w-full h-screen bg-white overflow-y-auto overflow-x-hidden  ">
+      <div className="w-full h-screen bg-white overflow-y-auto overflow-x-hidden">
         <Header />
-        <div className="relative  left-[80%] ">
-          <SidePicture className="absolute  "></SidePicture>
+        <div className="relative left-[80%]">
+          <SidePicture className="absolute"></SidePicture>
         </div>
-        <main className="w-full  h-auto text-color  justify-center items-center bg-white ">
+        <main className="w-full h-auto text-color justify-center items-center bg-white ">
           <section>
-            <h1 className="text-center  text-color font-lato text-2xl font-bold pt-4 ">
+            <h1 className="text-center text-color font-lato text-2xl font-bold pt-4 ">
               Đăng ký ngay để bắt đầu sử dụng miễn<br></br>phí dịch vụ của chúng
               tôi
             </h1>{' '}
           </section>
           <form className="flex flex-nowrap mx-auto justify-center mt-6 w-2/5 border-red-400 ">
             <input
-              className="w-2/3 h-14 border border-r-0  pl-2 rounded-lg rounded-r-none "
+              className="w-2/3 h-14 border border-r-0 pl-2 rounded-lg rounded-r-none "
               type="text"
               id="DangNhap"
               name="fname"
