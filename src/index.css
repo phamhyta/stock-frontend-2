@@ -3,8 +3,9 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
-<<<<<<< HEAD
-=======
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -46,11 +47,6 @@ body {
   height: 100%;
 }
 
-.grid-cols-3-9 {
-  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
-}
-
->>>>>>> 0f71d484ca1b7b3aeb9ce36700bd3b5373210a36
 .menu-item {
     font-weight: 700;
     font-size: 19px;
@@ -72,7 +68,9 @@ body {
    background-color:  #5BD3A3;
 }
 
-
+.shadow-wt {
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
 .bg-color-main {
     background-color: #fcfcfc;
 }
@@ -84,13 +82,17 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.bg-color-wf {
+   background-color: #faf9ff;
+}
+
+
 .bg-color {
    /* background-color: rgb(246,254,249); */
    background: linear-gradient(90.26deg, rgba(207, 225, 217, 0.18) -0.04%, rgba(219, 255, 238, 0.06) 28.81%, rgba(227, 253, 235, 0.27) 64.08%, rgba(158, 249, 189, 0.06) 95.91%);
    border: 1px solid #FFFFFF;
 }
 
-<<<<<<< HEAD
 .bg-green-button {
     background-color: #20D088;
 }
@@ -183,14 +185,69 @@ body {
     color: #002966;
 }
 
-.bg-footer-color {
+bg-side-color {
     background-color: #2BCA89;
 }
-=======
-.height-chart {
-  height: 500px;
+
+.footer-color {
+    color: #2BCA89;
 }
-.height-chart-2 {
-  height: 372px;
+
+.bg-main-picture {
+    background-color: rgb(230,249,241);
 }
->>>>>>> 0f71d484ca1b7b3aeb9ce36700bd3b5373210a36
+
+.bg-main-button-picture {
+    background-color: #2BCA89;
+}
+
+.bg-side-color-ww {
+    color: #BFC3C8;
+}
+
+.font-side-color-2 {
+    color:#1D2939;
+}
+
+.font-side-color {
+    color:#00BF71;
+}
+
+.font-side-color2 {
+    color:#0047B3;
+}
+
+.font-side-color-w {
+    color: #9fa5b3;
+}
+
+.font-side-color-wt {
+    color: #D0D5DD;
+}
+
+.font-side-color-wt2 {
+    color: #344054;
+}
+.text-ssm {
+    font-size: 8px;
+    line-height: 20px;
+}
+
+.shadow-left {
+    box-shadow: -1.50848px 6.03392px 12.0678px rgba(0, 191, 113, 0.28);
+}
+.shadow-middle {
+    box-shadow: 0px 6.03392px 19.6102px rgba(10, 16, 72, 0.23);
+}
+.font-blue-color-wt{
+    color: #0065FF;
+}
+
+.shadow-wt {
+    box-shadow: 0px 3.29697px 3.29697px rgba(0, 0, 0, 0.05);
+border-radius: 3.29697px;
+}
+
+.bg-gray-wt {
+    background-color:  rgba(217, 217, 217, 0.15);;
+}

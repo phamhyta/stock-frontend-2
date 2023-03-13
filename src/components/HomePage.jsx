@@ -13,16 +13,12 @@ const Dashboard = () => {
           <div className="mx-4">Nhóm Ngành</div>
         </div>
         <div className="xl:flex">
-          <div className="border rounded-md w-full xl:w-2/3 height-chart px-4 pt-4 pb-12">
-            <div className=" font-bold text-2xl">Tài chính</div>
+          <div className="border rounded-md w-full xl:w-2/3 px-4 pt-4 pb-12">
             <div className="w-full h-full">
               <TreeMaps />
             </div>
           </div>
-          <div className="border rounded-md w-full xl:w-1/3 height-chart-2 p-4 mt-4 xl:mt-32 xl:ml-4 px-4 pt-4 pb-12">
-            <div className=" font-bold text-xl xl:text-base">
-              Vật liệu cơ bản
-            </div>
+          <div className="border rounded-md w-full xl:w-1/3 p-4 mt-4 xl:mt-0 xl:ml-4 px-4 pt-4 pb-12">
             <div className="w-full h-full">
               <TreeMaps />
             </div>
