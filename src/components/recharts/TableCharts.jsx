@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Pagination from 'https://cdn.skypack.dev/rc-pagination@3.1.15';
+import Pagination from 'rc-pagination';
+
 const datatableUsers = [
   {
     sector: 'Dịch vụ lưu trú',
