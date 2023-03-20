@@ -1,97 +1,97 @@
-import React from "react";
-import { ReactComponent as SidePicture2 } from "../../assets/svg/SidePicture2.svg";
-import { ReactComponent as SidePictureRound } from "../../assets/svg/SidePictureRound.svg";
-import { ReactComponent as Vectors } from "../../assets/svg/vector.svg";
-import { ReactComponent as LeftGraph } from "../../assets/svg/LeftSide/LeftGraph.svg";
-import { ReactComponent as MonthlyView } from "../../assets/svg/LeftSide/MonthlyView.svg";
-import { ReactComponent as Logo1 } from "../../assets/svg/LeftSide/logo1.svg";
-import { ReactComponent as Logo2 } from "../../assets/svg/LeftSide/logo2.svg";
-import { ReactComponent as Graph1 } from "../../assets/svg/LeftSide/graph1.svg";
-import { ReactComponent as Graph2 } from "../../assets/svg/LeftSide/graph2.svg";
-import { ReactComponent as Graph3 } from "../../assets/svg/LeftSide/graph3.svg";
-import { ReactComponent as Graph4 } from "../../assets/svg/LeftSide/graph4.svg";
-import { ReactComponent as MenuIcon } from "../../assets/svg/LeftSide/MenuIcon.svg";
+import React from 'react';
+import { ReactComponent as SidePicture2 } from '../../assets/svg/SidePicture2.svg';
+import { ReactComponent as SidePictureRound } from '../../assets/svg/SidePictureRound.svg';
+import { ReactComponent as Vectors } from '../../assets/svg/vector.svg';
+import { ReactComponent as LeftGraph } from '../../assets/svg/LeftSide/LeftGraph.svg';
+import { ReactComponent as MonthlyView } from '../../assets/svg/LeftSide/MonthlyView.svg';
+import { ReactComponent as Logo1 } from '../../assets/svg/LeftSide/logo1.svg';
+import { ReactComponent as Logo2 } from '../../assets/svg/LeftSide/logo2.svg';
+import { ReactComponent as Graph1 } from '../../assets/svg/LeftSide/graph1.svg';
+import { ReactComponent as Graph2 } from '../../assets/svg/LeftSide/graph2.svg';
+import { ReactComponent as Graph3 } from '../../assets/svg/LeftSide/graph3.svg';
+import { ReactComponent as Graph4 } from '../../assets/svg/LeftSide/graph4.svg';
+import { ReactComponent as MenuIcon } from '../../assets/svg/LeftSide/MenuIcon.svg';
 
-import { ReactComponent as Vinamilk } from "../../assets/svg/RightSide/Vinamilk.svg";
-import { ReactComponent as IconVinhome } from "../../assets/svg/RightSide/IconVinhomes.svg";
-import { ReactComponent as StockGroup } from "../../assets/svg/RightSide/StockGroup.svg";
+import { ReactComponent as Vinamilk } from '../../assets/svg/RightSide/Vinamilk.svg';
+import { ReactComponent as IconVinhome } from '../../assets/svg/RightSide/IconVinhomes.svg';
+import { ReactComponent as StockGroup } from '../../assets/svg/RightSide/StockGroup.svg';
 
-import { ReactComponent as Vector_0 } from "../../assets/svg/Board/Vector0.svg";
-import { ReactComponent as IconBlue } from "../../assets/svg/Board/IconBlue.svg";
-import { ReactComponent as Vector_2 } from "../../assets/svg/WelcomeGoStock/Vector_2.svg";
-import { ReactComponent as Vector_3 } from "../../assets/svg/WelcomeGoStock/Vector_3.svg";
-import { ReactComponent as Vector_4 } from "../../assets/svg/WelcomeGoStock/Vector_4.svg";
-import { ReactComponent as Vector_5 } from "../../assets/svg/WelcomeGoStock/Vector_5.svg";
-import { ReactComponent as Vector_6 } from "../../assets/svg/WelcomeGoStock/Vector_6.svg";
-import { ReactComponent as IconDollar } from "../../assets/svg/WelcomeGoStock/IconDollar.svg";
+import { ReactComponent as Vector_0 } from '../../assets/svg/Board/Vector0.svg';
+import { ReactComponent as IconBlue } from '../../assets/svg/Board/IconBlue.svg';
+import { ReactComponent as Vector_2 } from '../../assets/svg/WelcomeGoStock/Vector_2.svg';
+import { ReactComponent as Vector_3 } from '../../assets/svg/WelcomeGoStock/Vector_3.svg';
+import { ReactComponent as Vector_4 } from '../../assets/svg/WelcomeGoStock/Vector_4.svg';
+import { ReactComponent as Vector_5 } from '../../assets/svg/WelcomeGoStock/Vector_5.svg';
+import { ReactComponent as Vector_6 } from '../../assets/svg/WelcomeGoStock/Vector_6.svg';
+import { ReactComponent as IconDollar } from '../../assets/svg/WelcomeGoStock/IconDollar.svg';
 
-import { ReactComponent as BoardStock } from "../../assets/svg/Board/BoardStock.svg";
+import BoardStock from '../../assets/png/BoardStock.png';
 
-import { ReactComponent as BarChart } from "../../assets/svg/Board2/BarChart.svg";
+import { ReactComponent as BarChart } from '../../assets/svg/Board2/BarChart.svg';
 
-import { ReactComponent as VectorDecor } from "../../assets/svg/Board3/Decor.svg";
-import { ReactComponent as IconBell } from "../../assets/svg/Board3/IconBell.svg";
-import { ReactComponent as IconHuman } from "../../assets/svg/Board3/IconHuman.svg";
-import { ReactComponent as SearchBar } from "../../assets/svg/Board3/SearchBar.svg";
-import { ReactComponent as LeftChart } from "../../assets/svg/Board3/LeftBarChart.svg";
-import { ReactComponent as TotalEquity } from "../../assets/svg/Board3/TotalEquity.svg";
-import { ReactComponent as RightBar } from "../../assets/svg/Board3/RightBar.svg";
-import { ReactComponent as ChartScreen } from "../../assets/svg/Board3/ChartScreen.svg";
-import { ReactComponent as SearchIcon } from "../../assets/svg/Board3/SearchIcon.svg";
+import { ReactComponent as VectorDecor } from '../../assets/svg/Board3/Decor.svg';
+import { ReactComponent as IconBell } from '../../assets/svg/Board3/IconBell.svg';
+import { ReactComponent as IconHuman } from '../../assets/svg/Board3/IconHuman.svg';
+import { ReactComponent as SearchBar } from '../../assets/svg/Board3/SearchBar.svg';
+import { ReactComponent as LeftChart } from '../../assets/svg/Board3/LeftBarChart.svg';
+import { ReactComponent as TotalEquity } from '../../assets/svg/Board3/TotalEquity.svg';
+import { ReactComponent as RightBar } from '../../assets/svg/Board3/RightBar.svg';
+import { ReactComponent as ChartScreen } from '../../assets/svg/Board3/ChartScreen.svg';
+import { ReactComponent as SearchIcon } from '../../assets/svg/Board3/SearchIcon.svg';
 
-import { ReactComponent as DecorBg } from "../../assets/svg/DecorBg.svg";
+import { ReactComponent as DecorBg } from '../../assets/svg/DecorBg.svg';
 const Main = () => {
-  const tag = "<";
+  const tag = '<';
 
   const brand = [
     {
       Icon: Vinamilk,
-      Name: "VNM",
-      Detail: "Vinamilk",
-      Value: "+7.05%",
+      Name: 'VNM',
+      Detail: 'Vinamilk',
+      Value: '+7.05%',
     },
     {
       Icon: IconVinhome,
-      Name: "VIC",
-      Detail: "Vingroup",
-      Value: "+15.75%",
+      Name: 'VIC',
+      Detail: 'Vingroup',
+      Value: '+15.75%',
     },
     {
       Icon: Vinamilk,
-      Name: "VNM",
-      Detail: "Vinamilk",
-      Value: "+12.45%",
+      Name: 'VNM',
+      Detail: 'Vinamilk',
+      Value: '+12.45%',
     },
   ];
 
   const items = [
     {
       Icon: Vector_0,
-      name: "Báo cáo",
+      name: 'Báo cáo',
     },
     {
       Icon: IconBlue,
-      name: "Portfolio",
+      name: 'Portfolio',
     },
     {
       Icon: Vector_2,
-      name: "Khám phá",
+      name: 'Khám phá',
     },
     {
       Icon: Vector_3,
-      name: "Thanh toán",
+      name: 'Thanh toán',
     },
     {
       Icon: Vector_4,
-      name: "Lịch sử",
+      name: 'Lịch sử',
     },
     {
       Icon: Vector_5,
-      name: "Tin nhắn",
+      name: 'Tin nhắn',
     },
     {
       Icon: Vector_6,
-      name: "Cài đặt",
+      name: 'Cài đặt',
     },
   ];
 
@@ -216,10 +216,10 @@ const Main = () => {
 
         <section className="order-1 lg:order-2 lg:col-span-5 lg:p-10 lg:px-5 lg:mb-0 mb-6">
           <h1 className="font-inters  mt-7 lg:leading-[3rem] lg:font-medium lg:text-left text-center font-bold text-xl  lg:text-4xl text-main-green">
-            Dễ dàng theo giõi các biến động cổ phiếu với{" "}
+            Dễ dàng theo giõi các biến động cổ phiếu với{' '}
             <h1 className="lg:font-medium font-bold lg:text-4xl inline-block  lg:block text-xl  text-main-linear">
               GoStock
-            </h1>{" "}
+            </h1>{' '}
           </h1>
 
           <p className="font-inters main-second-color font-medium text-base mt-[45px] lg:text-left text-center  ">
@@ -240,14 +240,14 @@ const Main = () => {
       <div className="lg:mt-10 mx-auto lg:w-[88%] lg:grid lg:grid-cols-2   ">
         <section className="lg:grid-cols-1 text-center lg:text-left lg:p-10">
           <h1 className="font-inters  lg:leading-[2rem] font-bold lg:font-medium lg:text-3xl text-xl lg:mt-0 mt-5   text-main-green">
-            Tìm ra những cổ phiếu phát triển trong tương lai{" "}
+            Tìm ra những cổ phiếu phát triển trong tương lai{' '}
           </h1>
           <p className="font-inters main-second-color font-medium text-base lg:text-lg mt-[12px] lg:mt-[45px]  ">
             Sử dụng công nghệ AI, chúng tôi sẽ giúp bạn tìm ra những cổ phiếu có
             tiềm năng tăng giá trong thời gian tới
           </p>
           <h1 className="lg:mt-10 mt-5  font-inters  leading-[2rem] font-bold lg:font-medium text-xl  lg:text-3xl text-main-green">
-            Quản lí tài khoản của bạn{" "}
+            Quản lí tài khoản của bạn{' '}
           </h1>
           <p className="font-inters main-second-color font-medium  text-base  lg:text-lg mt-[14px] lg:mt-[45px]  ">
             Mua và bán các cổ phiếu, theo dõi tất cả chỉ trong một ví duy nhất
@@ -324,7 +324,7 @@ const Main = () => {
                       <Icon className="lg:w-[15px] lg:mr-4 lg:h-[15px] h-[6px] w-[6px] mr-2    " />
                       <h2
                         className={`text-[#BFC3C8] text-[6px] lg:text-[10px]  ${
-                          name === "Portfolio" ? "text-[#00BF71]" : ""
+                          name === 'Portfolio' ? 'text-[#00BF71]' : ''
                         }`}
                       >
                         {name}
@@ -356,8 +356,8 @@ const Main = () => {
                   <IconHuman className="lg:mt-2" />
                 </div>
 
-                <div className="lg:mt-10 w-[95%] h-[70%]">
-                  <BoardStock className="w-full lg:pb-10" />
+                <div className="lg:mt-10 w-[95%] h-[70%] flex justify-center items-center">
+                  <img src={BoardStock} alt="" />
                 </div>
               </div>
             </div>
@@ -428,7 +428,7 @@ const Main = () => {
                       <Icon className="lg:w-[15px] lg:mr-4 lg:h-[15px] h-[6px] w-[6px] mr-2    " />
                       <h2
                         className={`text-[#BFC3C8] text-[6px] lg:text-[10px]  ${
-                          name === "Khám phá" ? "text-[#00BF71]" : ""
+                          name === 'Khám phá' ? 'text-[#00BF71]' : ''
                         }`}
                       >
                         {name}
