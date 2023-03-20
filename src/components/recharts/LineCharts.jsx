@@ -16,7 +16,7 @@ const series = [
     data: [
       {
         date: '02/02/2023',
-        index: 1210,
+        index: 2210,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -24,7 +24,7 @@ const series = [
       },
       {
         date: '03/02/2023',
-        index: 1430,
+        index: 1730,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -40,7 +40,7 @@ const series = [
       },
       {
         date: '05/02/2023',
-        index: 1340,
+        index: 3440,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -48,7 +48,7 @@ const series = [
       },
       {
         date: '06/02/2023',
-        index: 1120,
+        index: 620,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -56,7 +56,7 @@ const series = [
       },
       {
         date: '07/02/2023',
-        index: 1420,
+        index: 120,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -72,7 +72,7 @@ const series = [
       },
       {
         date: '09/02/2023',
-        index: 1160,
+        index: 160,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -96,7 +96,7 @@ const series = [
       },
       {
         date: '12/02/2023',
-        index: 1470,
+        index: 2470,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -134,7 +134,7 @@ const series = [
     data: [
       {
         date: '02/02/2023',
-        index: 1000,
+        index: 400,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -150,7 +150,7 @@ const series = [
       },
       {
         date: '04/02/2023',
-        index: 1200,
+        index: 2200,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -174,7 +174,7 @@ const series = [
       },
       {
         date: '07/02/2023',
-        index: 1400,
+        index: 200,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -182,7 +182,7 @@ const series = [
       },
       {
         date: '08/02/2023',
-        index: 1500,
+        index: 2400,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -190,7 +190,7 @@ const series = [
       },
       {
         date: '09/02/2023',
-        index: 1600,
+        index: 2600,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -198,7 +198,7 @@ const series = [
       },
       {
         date: '10/02/2023',
-        index: 1700,
+        index: 3100,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -206,7 +206,7 @@ const series = [
       },
       {
         date: '11/02/2023',
-        index: 1800,
+        index: 800,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -214,7 +214,7 @@ const series = [
       },
       {
         date: '12/02/2023',
-        index: 1970,
+        index: 470,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -222,7 +222,7 @@ const series = [
       },
       {
         date: '13/02/2023',
-        index: 2000,
+        index: 200,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -230,7 +230,7 @@ const series = [
       },
       {
         date: '14/02/2023',
-        index: 2100,
+        index: 1000,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -252,7 +252,7 @@ const series = [
     data: [
       {
         date: '02/02/2023',
-        index: 900,
+        index: 100,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -260,7 +260,7 @@ const series = [
       },
       {
         date: '03/02/2023',
-        index: 1000,
+        index: 2000,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -268,7 +268,7 @@ const series = [
       },
       {
         date: '04/02/2023',
-        index: 1100,
+        index: 400,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -276,7 +276,7 @@ const series = [
       },
       {
         date: '05/02/2023',
-        index: 1200,
+        index: 1000,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -300,7 +300,7 @@ const series = [
       },
       {
         date: '08/02/2023',
-        index: 1200,
+        index: 2200,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -348,7 +348,7 @@ const series = [
       },
       {
         date: '14/02/2023',
-        index: 1500,
+        index: 2100,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
@@ -356,14 +356,14 @@ const series = [
       },
       {
         date: '15/02/2023',
-        index: 1800,
+        index: 200,
         volume: 1214241421,
         value: 133000000000,
         foreign_volume_buy: 1214241421,
         foreign_volume_sell: 1214241421,
       },
     ],
-    color: '#A9BD83',
+    color: '#9100FF',
   },
 ];
 
@@ -383,6 +383,7 @@ const LineCharts = () => {
             name={s.industry}
             key={s.industry}
             stroke={s.color}
+            strokeWidth="2"
             tooltipType="none"
           />
         ))}

@@ -19,21 +19,174 @@ body {
   background-color: #2BCA89;
 }
 
-.recharts-xAxis, .recharts-cartesian-axis-line, 
-.recharts-cartesian-axis-tick-line, .recharts-cartesian-grid-horizontal, 
-.recharts-cartesian-grid-vertical {
+.line-hidden .recharts-xAxis, .line-hidden .recharts-cartesian-axis-line, .line-hidden
+.recharts-cartesian-axis-tick-line,.line-hidden .recharts-cartesian-grid-horizontal, .line-hidden
+.recharts-cartesian-grid-vertical,.line-hidden .recharts-line-dot {
   display: none;
 }
 
-.recharts-legend-item-text {
-  font-size: 24px;
-  font-weight: 700;
+.table .form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #475f7b;
+    background-color: #fff;
+    border: 1px solid #dfe3e7;
+    border-radius: 0.267rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.table .form-control:focus {
+    color: #475f7b;
+    background-color: #fff;
+    border-color: #5a8dee;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+.table .card {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    overflow: hidden;
+}
+.table .pagination-data{
+  padding: 0;
+  margin: 0;
+}
+.table .pagination-data li{
+  list-style:none;
+}
+.table .table-filter-info{
+  padding : 15px;
+}
+.table .thead-primary tr th {
+    background-color: #5a8dee;
+    border-color: #5a8dee;
+    color: #fff;
 }
 
-.recharts-cartesian-axis-tick-value {
-  font-weight: 700;
-  font-size: 20px;
-  color: #BFC3C8;
+.table .rc-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.rc-pagination-item,
+.rc-pagination-prev, 
+.rc-pagination-jump-prev, 
+.rc-pagination-jump-next {
+    margin-right: 8px;
+}
+
+.rc-pagination-total-text{
+  margin-right: 12px;
+  cursor: initial;
+}
+
+.rc-pagination-jump-next, 
+.rc-pagination-jump-prev, 
+.rc-pagination-next, 
+.rc-pagination-prev {
+    display: inline-block;
+    min-width: 28px;
+    height: 28px;
+    color: rgba(0,0,0,.85);
+    font-family: Arial;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.rc-pagination-jump-next button, 
+.rc-pagination-jump-prev button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+.rc-pagination-jump-next button:after, 
+.rc-pagination-jump-prev button:after {
+    display: block;
+    content: "•••";
+}
+.rc-pagination-item, 
+.rc-pagination-prev, 
+.rc-pagination-next, 
+.rc-pagination-total-text {
+    min-width: initial;
+    height: auto;
+    line-height: initial;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.rc-pagination-item a, 
+.rc-pagination-item button, 
+.rc-pagination-prev a, 
+.rc-pagination-prev button, 
+.rc-pagination-next a, 
+.rc-pagination-next button,
+.rc-pagination-total-text a, 
+.rc-pagination-total-text button {
+    padding: 6px 8px;
+    height: auto;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #656f84 !important;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.rc-pagination-item.rc-pagination-item-active a, 
+.rc-pagination-item.rc-pagination-item-active a:hover, 
+.rc-pagination-prev.rc-pagination-item-active a, 
+.rc-pagination-prev.rc-pagination-item-active a:hover, 
+.rc-pagination-next.rc-pagination-item-active a, 
+.rc-pagination-next.rc-pagination-item-active a:hover, 
+.rc-pagination-total-text.rc-pagination-item-active a, 
+.rc-pagination-total-text.rc-pagination-item-active a:hover {
+    background-color: #5a8dee;
+    border-color: #5a8dee;
+    color: #ffffff !important;
+}
+.rc-pagination-item a:hover, 
+.rc-pagination-item button:hover, 
+.rc-pagination-prev a:hover, 
+.rc-pagination-prev button:hover, 
+.rc-pagination-next a:hover, 
+.rc-pagination-next button:hover, 
+.rc-pagination-total-text a:hover, 
+.rc-pagination-total-text button:hover {
+    background-color: #eceff5;
+    border-color: #eceff5;
+}
+
+.charts-box {
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+    border-radius: 16px;
+}
+
+.charts-box .title {
+    top: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    padding: 10px;
 }
 .menu-hover:hover {
   color: #2BCA89;
@@ -57,8 +210,6 @@ body {
     margin-right: 25px;
     color:rgba(10, 16, 72, 0.9);
 }
-
-
 
 * {
     text-decoration: none;
@@ -174,6 +325,10 @@ body {
 
 .bg-main-green {
     background-color: #00BF71;
+}
+
+.bg-main-red {
+    background-color: #F04438;
 }
 
 .font-inters{
