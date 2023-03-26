@@ -1,9 +1,12 @@
 import React from 'react';
 import TreeMaps from './recharts/TreeMaps';
 import LineCharts from './recharts/LineCharts';
+import MarketChart from './recharts/MarketChart';
 const Dashboard = () => {
   return (
     <div>
+      {/* Market Chart */}
+      <MarketChart />
       {/* Treemap */}
       <div className="p-10">
         <div className="font-semibold text-xl my-4">Bản đồ thị trường</div>
