@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TreeMaps from './recharts/TreeMaps/TreeMaps';
 import LineCharts from './recharts/LineCharts';
 import BarCharts from './recharts/BarCharts';
 import BoxCharts from './recharts/BoxCharts';
 import TableCharts from './recharts/TableCharts';
+import ValueChart from './recharts/ValueChart';
 import { ReactComponent as Chart } from '../assets/svg/chart.svg';
 import { ReactComponent as Table } from '../assets/svg/table.svg';
-const Dashboard = () => {
+import './HomePage.css';
+import VolChart from './recharts/VolChart';
+// import { ketQuaGiaoDichNdtnn, topCoPhieuAnhHuong } from '../common/api';
+const Dashboard = ({ loading }) => {
   const [chart, setChart] = useState(1);
+  const [modeNdttn, setModeNtddn] = useState('1day');
   const [lineChart, setLineChart] = useState(1);
   const [table, setTable] = useState(false);
+
+  useEffect(() => {
+    const fetch = async () => {
+      setModeNtddn('1day');
+    };
+    fetch();
+  }, [loading, chart]);
+
   return (
     <div>
       <div className="p-10">
@@ -38,13 +51,113 @@ const Dashboard = () => {
             Nhóm Ngành
           </div>
         </div>
-        <div className="xl:flex justify-center items-center">
+        <div className="xl:flex justify-center items-center home-page">
           {chart === 1 && (
-            <div className="w-5/6 h-full charts-box">
-              <div className="title">
-                Top cổ phiếu ảnh hưởng tới chỉ số index
+            <div className="w-full justify-center items-center">
+              <div className="w-full h-full charts-box">
+                <div className="title">
+                  Top cổ phiếu ảnh hưởng tới chỉ số index
+                </div>
+                <BarCharts />
               </div>
-              <BarCharts />
+              <div className="w-full h-full charts-box mt-8 mb-8">
+                <div className="flex justify-between">
+                  <div className="title">Giao dịch của NDTNN</div>
+                  <div className="flex justify-between w-1/4 m-4">
+                    <div
+                      className={`index-time ${
+                        modeNdttn === '1day' ? 'index-time-active' : ''
+                      }`}
+                      onClick={() => setModeNtddn('1day')}
+                    >
+                      1 ngày
+                    </div>
+                    <div
+                      className={`index-time ${
+                        modeNdttn === '1week' ? 'index-time-active' : ''
+                      }`}
+                      onClick={() => setModeNtddn('1week')}
+                    >
+                      1 tuần
+                    </div>
+                    <div
+                      className={`index-time ${
+                        modeNdttn === '1month' ? 'index-time-active' : ''
+                      }`}
+                      onClick={() => setModeNtddn('1month')}
+                    >
+                      1 tháng
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full flex justify-between">
+                  <div className="w-1/2">
+                    <div className="text-center value-chart-label">
+                      Giá trị giao dịch
+                    </div>
+                    <div className="w-full">
+                      <ValueChart mode={modeNdttn} />
+                    </div>
+                  </div>
+                  <div className="w-1/2">
+                    <div className="text-center value-chart-label">
+                      Khối lượng giao dịch
+                    </div>
+                    <div>
+                      <VolChart mode={modeNdttn} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-full charts-box mt-8 mb-8">
+                <div className="flex justify-between">
+                  <div className="title">Giao dịch của Tự doanh</div>
+                  <div className="flex justify-between w-1/4 m-4">
+                    <div
+                      className={`index-time ${
+                        modeNdttn === '1day' ? 'index-time-active' : ''
+                      }`}
+                      onClick={() => setModeNtddn('1day')}
+                    >
+                      1 ngày
+                    </div>
+                    <div
+                      className={`index-time ${
+                        modeNdttn === '1week' ? 'index-time-active' : ''
+                      }`}
+                      onClick={() => setModeNtddn('1week')}
+                    >
+                      1 tuần
+                    </div>
+                    <div
+                      className={`index-time ${
+                        modeNdttn === '1month' ? 'index-time-active' : ''
+                      }`}
+                      onClick={() => setModeNtddn('1month')}
+                    >
+                      1 tháng
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full flex justify-between">
+                  <div className="w-1/2">
+                    <div className="text-center value-chart-label">
+                      Giá trị giao dịch
+                    </div>
+                    <div className="w-full">
+                      <ValueChart mode={modeNdttn} />
+                    </div>
+                  </div>
+                  <div className="w-1/2">
+                    <div className="text-center value-chart-label">
+                      Khối lượng giao dịch
+                    </div>
+                    <div>
+                      <VolChart mode={modeNdttn} />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
           {chart === 2 && (
