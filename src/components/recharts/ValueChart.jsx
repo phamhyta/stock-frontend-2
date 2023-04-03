@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 import {
   BarChart,
   Bar,
@@ -10,26 +11,30 @@ import {
   ReferenceLine,
   Cell,
 } from 'recharts';
-import { topCoPhieuAnhHuong } from '../../common/api';
+import { ketQuaGiaoDichNdtnn } from '../../common/api';
 
-const BarCharts = () => {
+const ValueChart = (props) => {
+  const { mode } = props;
   const [datas, setDatas] = useState([]);
+  let unit = '';
   useEffect(() => {
     const fetch = async () => {
-      const res = await topCoPhieuAnhHuong();
+      const res = await ketQuaGiaoDichNdtnn({ mode });
       if (res.code === 200) {
         setDatas(res.data);
       }
     };
     fetch();
-  }, []);
+  }, [mode]);
   for (let i = 0; i < datas.length; i++) {
-    datas[i].fill = datas[i].PerChange > 0 ? '#00BF71' : '#F04438';
+    datas[i].fill = datas[i].ValueChange > 0 ? '#00BF71' : '#F04438';
+    datas[i].StockCode = dayjs(datas[i].TradingDate).format('d MMM');
+    unit = datas[i].Unit;
   }
   return (
-    <div id="chart" width="100%" height="100%">
+    <div id="chart">
       <BarChart
-        width={1100}
+        width={600}
         height={300}
         data={datas}
         margin={{
@@ -45,7 +50,7 @@ const BarCharts = () => {
         <Tooltip />
         <Legend />
         <ReferenceLine y={0} stroke="#000" />
-        <Bar dataKey="PerChange">
+        <Bar dataKey="ValueChange" unit={unit}>
           {datas.map((entry, index) => (
             <Cell fill={datas[index].fill} />
           ))}
@@ -54,4 +59,4 @@ const BarCharts = () => {
     </div>
   );
 };
-export default BarCharts;
+export default ValueChart;
