@@ -9,7 +9,7 @@ import { ReactComponent as Chart } from '../assets/svg/chart.svg';
 import { ReactComponent as Table } from '../assets/svg/table.svg';
 import './HomePage.css';
 import VolChart from './recharts/VolChart';
-// import { ketQuaGiaoDichNdtnn, topCoPhieuAnhHuong } from '../common/api';
+import ValuationCharts from './recharts/ValuationCharts';
 const Dashboard = ({ loading }) => {
   const [chart, setChart] = useState(1);
   const [modeNdttn, setModeNtddn] = useState('1day');
@@ -240,6 +240,7 @@ const Dashboard = ({ loading }) => {
               )}
             </div>
           )}
+          {lineChart === 2 && <ValuationCharts />}
         </div>
       </div>
     </div>
