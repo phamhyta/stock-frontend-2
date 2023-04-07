@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-export function callApiget(url, params = null, headers = {}) {
+export async function callApiget(url, params = null, headers = {}) {
 
   headers = {
     ...headers,
   }
 
-  return axios({
+  return await axios({
     method: 'get',
     url,
     params,
@@ -14,13 +14,13 @@ export function callApiget(url, params = null, headers = {}) {
   })
 }
 
-export function callApipost(url, params, body, headers = {}) {
+export async function callApipost(url, params, body, headers = {}) {
 
   headers = {
     ...headers,
   }
 
-  return axios({
+  return await axios({
     method: 'post',
     url,
     params,

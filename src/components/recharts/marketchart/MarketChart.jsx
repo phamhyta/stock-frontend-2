@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react"
-import { connect, useDispatch } from "react-redux"
-
+import { connect } from "react-redux"
+import { getStockPrice } from "../../../store/reducers/recharts/actions"
+import { ResponsiveContainer } from 'recharts'
 const MarketChart = (props) => {
+    const { getStockPrice } = props
     const [menu, setMenu] = useState('chiso')
-    const dispatch = useDispatch()
 
-    const test = () => {
-        props.getData()
+    const fetchDataStock = () => {
+        getStockPrice('1min','HCM',1679028337,1679328337)
     }
 
     useEffect(() => {
-        console.log(menu);
-    })
+        fetchDataStock()
+    }, [])
+
     return(
         <div className="p-10 pb-0">
             <div className="font-semibold text-2xl">Thị trường</div>
@@ -37,15 +39,15 @@ const MarketChart = (props) => {
             </div>
             <div className="flex justify-between">
                 <div className="">
-                    <button onClick={test}>Click</button>
+                    <ResponsiveContainer>
+                        
+                    </ResponsiveContainer>
                 </div>
                 <div className="">table</div>
             </div>
         </div>
     )
 }
-
-// export default MarketChart
 
 const mapStateToProps = state => {
     return{
@@ -54,11 +56,6 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        test: () => dispatch({ type: 'TEST'}),
-        getData: () => dispatch({type: 'FETCH-STOCK-PRICE'})
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(MarketChart)
+export default connect(mapStateToProps, {
+    getStockPrice,
+})(MarketChart)
