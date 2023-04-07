@@ -1,7 +1,7 @@
 import React from 'react';
 import TreeMaps from './recharts/TreeMaps';
 import LineCharts from './recharts/LineCharts';
-import MarketChart from './recharts/MarketChart';
+import MarketChart from './recharts/marketchart/MarketChart';
 const Dashboard = () => {
   return (
     <div>
