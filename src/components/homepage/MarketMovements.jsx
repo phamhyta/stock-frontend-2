@@ -4,7 +4,7 @@ import TopDiscount from './TopDiscount';
 
 const MarketMovements = (props) => {
   const { mode } = props;
-  const { topPrice, setTopPrice } = useState(1);
+  const [topPrice, setTopPrice] = useState(1);
   const elRef = useRef();
   useEffect(() => {
     const el = elRef.current;
@@ -28,14 +28,19 @@ const MarketMovements = (props) => {
         style={{ whiteSpace: 'nowrap' }}
       >
         <div className="w-5/12 mr-4 p-4 rounded-lg shadow-md items">
-          <TopPriceIncrease mode={mode} />
+          {topPrice === 2 && <TopDiscount mode={mode} />}
+          {topPrice === 1 && <TopPriceIncrease mode={mode} />}
           <div className="flex justify-center items-center mt-4">
             <div
-              className="w-3 h-3 bg-slate-100 rounded-full mr-1"
+              className={`w-3 h-3  rounded-full ml-1 ${
+                topPrice === 2 ? 'bg-slate-100' : 'bg-slate-400'
+              }`}
               onClick={() => setTopPrice(1)}
             ></div>
             <div
-              className="w-3 h-3 bg-slate-400 rounded-full ml-1"
+              className={`w-3 h-3  rounded-full ml-1 ${
+                topPrice === 2 ? 'bg-slate-400' : 'bg-slate-100'
+              }`}
               onClick={() => setTopPrice(2)}
             ></div>
           </div>
@@ -44,10 +49,10 @@ const MarketMovements = (props) => {
           <TopDiscount mode={mode} />
         </div>
         <div className="w-5/12 mr-4 p-4 rounded-lg shadow-md items">
-          <TopPriceIncrease />
+          <TopPriceIncrease mode={mode} />
         </div>
         <div className="w-5/12 p-4 rounded-md shadow-lg items">
-          <TopPriceIncrease />
+          <TopPriceIncrease mode={mode} />
         </div>
       </div>
     </div>
