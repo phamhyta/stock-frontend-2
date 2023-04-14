@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
   baseURL: 'https://api-stock2.aiotlab-annotation.com/analytics/',
+  // baseURL: 'http://159.223.39.25:9999/analytics/',
 });
 
 export default axiosInstance;
