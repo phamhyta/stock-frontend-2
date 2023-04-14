@@ -27,6 +27,7 @@ const ValueChart = (props) => {
     fetch();
   }, [mode]);
   for (let i = 0; i < datas.length; i++) {
+    // datas[i].ValueChange = parseFloat(datas[i].ValueChange).toFixed(2);
     datas[i].fill = datas[i].ValueChange > 0 ? '#00BF71' : '#F04438';
     datas[i].StockCode = dayjs(datas[i].TradingDate).format('d MMM');
     unit = datas[i].Unit;
