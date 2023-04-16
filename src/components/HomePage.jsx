@@ -14,6 +14,7 @@ import MarketMovements from './homepage/MarketMovements';
 const Dashboard = ({ loading }) => {
   const [chart, setChart] = useState(1);
   const [modeNdttn, setModeNtddn] = useState('1day');
+  const [modeMarket, setModeMarket] = useState('1day');
   const [lineChart, setLineChart] = useState(1);
   const [table, setTable] = useState(false);
 
@@ -31,13 +32,34 @@ const Dashboard = ({ loading }) => {
           <div className="flex justify-between">
             <div className="font-semibold text-xl">Diễn biến thị trường</div>
             <div className="w-1/12 flex justify-between">
-              <div className="option">1D</div>
-              <div className="option-active">1W</div>
-              <div className="option">1M</div>
+              <div
+                className={`${
+                  modeMarket === '1day' ? 'option-active' : 'option'
+                }`}
+                onClick={() => setModeMarket('1day')}
+              >
+                1D
+              </div>
+              <div
+                className={`${
+                  modeMarket === '1week' ? 'option-active' : 'option'
+                }`}
+                onClick={() => setModeMarket('1week')}
+              >
+                1W
+              </div>
+              <div
+                className={`${
+                  modeMarket === '1month' ? 'option-active' : 'option'
+                }`}
+                onClick={() => setModeMarket('1month')}
+              >
+                1M
+              </div>
             </div>
           </div>
           <div className="w-full">
-            <MarketMovements mode={'1day'} />
+            <MarketMovements mode={modeMarket} />
           </div>
         </div>
         <div className="p-10">

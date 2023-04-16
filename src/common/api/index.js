@@ -99,3 +99,37 @@ export async function topGiamGia({ mode }) {
     console.log('err', error);
   }
 }
+
+export async function topMuaNuocNgoai({ mode }) {
+  try {
+    const res = await axiosInstance.get(
+      `/danh_sach_top_10_nua_nuoc_ngoai/${mode}`,
+      {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          accept: 'application/json',
+        },
+      }
+    );
+    return res.data;
+  } catch (error) {
+    console.log('err', error);
+  }
+}
+
+export async function topBanNuocNgoai({ mode }) {
+  try {
+    const res = await axiosInstance.get(
+      `/danh_sach_top_10_ban_nuoc_ngoai/${mode}`,
+      {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          accept: 'application/json',
+        },
+      }
+    );
+    return res.data;
+  } catch (error) {
+    console.log('err', error);
+  }
+}
