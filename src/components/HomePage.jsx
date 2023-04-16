@@ -14,6 +14,7 @@ import MarketMovements from './homepage/MarketMovements';
 const Dashboard = ({ loading }) => {
   const [chart, setChart] = useState(1);
   const [modeNdttn, setModeNtddn] = useState('1day');
+  const [modeNdttn2, setModeNtddn2] = useState('1day');
   const [modeMarket, setModeMarket] = useState('1day');
   const [lineChart, setLineChart] = useState(1);
   const [table, setTable] = useState(false);
@@ -100,7 +101,7 @@ const Dashboard = ({ loading }) => {
                 <div className="w-full h-full charts-box mt-8 mb-8">
                   <div className="flex justify-between">
                     <div className="title">Giao dịch của NDTNN</div>
-                    <div className="flex justify-between w-1/4 m-4">
+                    {/* <div className="flex justify-between w-1/4 m-4">
                       <div
                         className={`index-time ${
                           modeNdttn === '1day' ? 'index-time-active' : ''
@@ -125,10 +126,36 @@ const Dashboard = ({ loading }) => {
                       >
                         1 tháng
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="w-full flex justify-between">
                     <div className="w-1/2">
+                      <div className="flex justify-between w-1/2 float-right mr-10 m-4">
+                        <div
+                          className={`index-time ${
+                            modeNdttn === '1day' ? 'index-time-active' : ''
+                          }`}
+                          onClick={() => setModeNtddn('1day')}
+                        >
+                          1 ngày
+                        </div>
+                        <div
+                          className={`index-time ${
+                            modeNdttn === '1week' ? 'index-time-active' : ''
+                          }`}
+                          onClick={() => setModeNtddn('1week')}
+                        >
+                          1 tuần
+                        </div>
+                        <div
+                          className={`index-time ${
+                            modeNdttn === '1month' ? 'index-time-active' : ''
+                          }`}
+                          onClick={() => setModeNtddn('1month')}
+                        >
+                          1 tháng
+                        </div>
+                      </div>
                       <div className="text-center value-chart-label">
                         Giá trị giao dịch
                       </div>
@@ -137,11 +164,37 @@ const Dashboard = ({ loading }) => {
                       </div>
                     </div>
                     <div className="w-1/2">
+                      <div className="flex justify-between w-1/2 float-right mr-10 m-4">
+                        <div
+                          className={`index-time ${
+                            modeNdttn2 === '1day' ? 'index-time-active' : ''
+                          }`}
+                          onClick={() => setModeNtddn2('1day')}
+                        >
+                          1 ngày
+                        </div>
+                        <div
+                          className={`index-time ${
+                            modeNdttn2 === '1week' ? 'index-time-active' : ''
+                          }`}
+                          onClick={() => setModeNtddn2('1week')}
+                        >
+                          1 tuần
+                        </div>
+                        <div
+                          className={`index-time ${
+                            modeNdttn2 === '1month' ? 'index-time-active' : ''
+                          }`}
+                          onClick={() => setModeNtddn2('1month')}
+                        >
+                          1 tháng
+                        </div>
+                      </div>
                       <div className="text-center value-chart-label">
                         Khối lượng giao dịch
                       </div>
                       <div>
-                        <VolChart mode={modeNdttn} />
+                        <VolChart mode={modeNdttn2} />
                       </div>
                     </div>
                   </div>
