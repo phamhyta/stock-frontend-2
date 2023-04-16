@@ -96,7 +96,9 @@ const Dashboard = ({ loading }) => {
                   <div className="title">
                     Top cổ phiếu ảnh hưởng tới chỉ số index
                   </div>
-                  <BarCharts />
+                  <div className="w-full flex items-center justify-center">
+                    <BarCharts />
+                  </div>
                 </div>
                 <div className="w-full h-full charts-box mt-8 mb-8">
                   <div className="flex justify-between">
