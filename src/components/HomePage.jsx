@@ -103,32 +103,6 @@ const Dashboard = ({ loading }) => {
                 <div className="w-full h-full charts-box mt-8 mb-8">
                   <div className="flex justify-between">
                     <div className="title">Giao dịch của NDTNN</div>
-                    {/* <div className="flex justify-between w-1/4 m-4">
-                      <div
-                        className={`index-time ${
-                          modeNdttn === '1day' ? 'index-time-active' : ''
-                        }`}
-                        onClick={() => setModeNtddn('1day')}
-                      >
-                        1 ngày
-                      </div>
-                      <div
-                        className={`index-time ${
-                          modeNdttn === '1week' ? 'index-time-active' : ''
-                        }`}
-                        onClick={() => setModeNtddn('1week')}
-                      >
-                        1 tuần
-                      </div>
-                      <div
-                        className={`index-time ${
-                          modeNdttn === '1month' ? 'index-time-active' : ''
-                        }`}
-                        onClick={() => setModeNtddn('1month')}
-                      >
-                        1 tháng
-                      </div>
-                    </div> */}
                   </div>
                   <div className="w-full flex justify-between">
                     <div className="w-1/2">
@@ -197,55 +171,6 @@ const Dashboard = ({ loading }) => {
                       </div>
                       <div>
                         <VolChart mode={modeNdttn2} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full h-full charts-box mt-8 mb-8">
-                  <div className="flex justify-between">
-                    <div className="title">Giao dịch của Tự doanh</div>
-                    <div className="flex justify-between w-1/4 m-4">
-                      <div
-                        className={`index-time ${
-                          modeNdttn === '1day' ? 'index-time-active' : ''
-                        }`}
-                        onClick={() => setModeNtddn('1day')}
-                      >
-                        1 ngày
-                      </div>
-                      <div
-                        className={`index-time ${
-                          modeNdttn === '1week' ? 'index-time-active' : ''
-                        }`}
-                        onClick={() => setModeNtddn('1week')}
-                      >
-                        1 tuần
-                      </div>
-                      <div
-                        className={`index-time ${
-                          modeNdttn === '1month' ? 'index-time-active' : ''
-                        }`}
-                        onClick={() => setModeNtddn('1month')}
-                      >
-                        1 tháng
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full flex justify-between">
-                    <div className="w-1/2">
-                      <div className="text-center value-chart-label">
-                        Giá trị giao dịch
-                      </div>
-                      <div className="w-full">
-                        <ValueChart mode={modeNdttn} />
-                      </div>
-                    </div>
-                    <div className="w-1/2">
-                      <div className="text-center value-chart-label">
-                        Khối lượng giao dịch
-                      </div>
-                      <div>
-                        <VolChart mode={modeNdttn} />
                       </div>
                     </div>
                   </div>
