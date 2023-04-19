@@ -16,15 +16,15 @@ const TopPriceIncrease = (props) => {
   }, [mode]);
   console.log(datas);
   return (
-    <div className="w-full">
+    <div className="w-80">
       <div className="title">Top tăng giá</div>
       <div className="w-full flex label mt-2">
-        <div className="w-1/4 mr-4">Mã cổ phiếu</div>
-        <div className="w-5/12 mr-4"> Thay đổi giá (%)</div>
-        <div className="w-1/2 mr-4">Khối lượng giao dịch</div>
+        <div className="w-1/4 mr-2">Mã cổ phiếu</div>
+        <div className="w-5/12 mr-2"> Thay đổi giá (%)</div>
+        <div className="w-1/2 mr-2">Khối lượng giao dịch</div>
       </div>
       {datas.map((data) => (
-        <div className="flex mt-4">
+        <div className="flex mt-4 w-full">
           <div className="w-1/3 flex">
             <img className="" src={icon} alt="" />
             <div className="w-1/12 my-auto ml-2">{data.StockCode}</div>
@@ -33,7 +33,7 @@ const TopPriceIncrease = (props) => {
             <Increase className="my-auto mr-1" />
             {data.TotalPerChange}%
           </div>
-          <div className="w-1/3 label flex justify-end items-end mr-4">
+          <div className="w-1/3 label flex justify-end items-end mr-4 my-auto">
             {data.AvgVol}
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import TopPriceIncrease from './TopPriceIncrease';
 import TopDiscount from './TopDiscount';
+import TopBuy from './TopBuy';
+import TopSell from './TopSell';
 
 const MarketMovements = (props) => {
   const { mode } = props;
@@ -46,13 +48,13 @@ const MarketMovements = (props) => {
           </div>
         </div>
         <div className="w-5/12 mr-4 p-4 rounded-lg shadow-md items">
+          <TopBuy mode={mode} />
+        </div>
+        <div className="w-5/12 p-4 mr-4 rounded-lg shadow-md items">
+          <TopSell mode={mode} />
+        </div>
+        <div className="w-5/12 mr-12 p-4 rounded-lg shadow-md items">
           <TopDiscount mode={mode} />
-        </div>
-        <div className="w-5/12 mr-4 p-4 rounded-lg shadow-md items">
-          <TopPriceIncrease mode={mode} />
-        </div>
-        <div className="w-5/12 p-4 rounded-md shadow-lg items">
-          <TopPriceIncrease mode={mode} />
         </div>
       </div>
     </div>

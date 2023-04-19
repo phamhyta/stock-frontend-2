@@ -103,7 +103,7 @@ export async function topGiamGia({ mode }) {
 export async function topMuaNuocNgoai({ mode }) {
   try {
     const res = await axiosInstance.get(
-      `/danh_sach_top_10_nua_nuoc_ngoai/${mode}`,
+      `/danh_sach_top_10_mua_nuoc_ngoai/${mode}`,
       {
         headers: {
           'Content-Type': 'multipart/form-data',
